@@ -8,5 +8,6 @@ export default defineConfig({
   // src/mascot.css) — it does not replace or touch the existing
   // src/index.css design-token system the rest of the site relies on.
   plugins: [react(), tailwindcss()],
-  base: '/My-Portfolio/',
+  // GitHub Pages serves from /My-Portfolio/; Vercel and local dev serve from root.
+  base: process.env.GITHUB_ACTIONS ? '/My-Portfolio/' : '/',
 })
