@@ -56,36 +56,6 @@ export function Hero() {
             <span>BSIT Student · PM + Developer</span>
           </figcaption>
         </figure>
-        <div className="hero-card" aria-hidden="true">
-          <div className="wtitle">
-            <span className="wdot r" />
-            <span className="wdot y" />
-            <span className="wdot g" />
-          </div>
-          <div className="code-block">
-            <div className="code-line">
-              <span className="c">// currently —</span>
-            </div>
-            <div className="code-line">
-              <span className="k">class</span> <span className="f">ChandreiLao</span> {'{'}
-            </div>
-            <div className="code-line code-indent">
-              <span className="f">role</span> = <span className="s">"BSIT Student · PM + Dev"</span>;
-            </div>
-            <div className="code-line code-indent">
-              <span className="f">school</span> = <span className="s">"STI College — Sta. Cruz"</span>;
-            </div>
-            <div className="code-line code-indent">
-              <span className="f">stack</span> = [<span className="s">"C#"</span>, <span className="s">"ASP.NET Core"</span>,{' '}
-              <span className="s">"JavaScript"</span>, <span className="s">"SQL"</span>,{' '}
-              <span className="s">"React"</span>, <span className="s">"Node.js"</span>];
-            </div>
-            <div className="code-line code-indent">
-              <span className="f">focus</span> = <span className="s">"reliable systems, shipped on time"</span>;
-            </div>
-            <div className="code-line">{'}'}</div>
-          </div>
-        </div>
         </div>
       </div>
     </section>
