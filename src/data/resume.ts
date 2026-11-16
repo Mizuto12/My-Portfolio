@@ -135,7 +135,6 @@ export const projects: ProjectCaseStudy[] = [
       'Role-based access control is easy to get "mostly right" in the UI and much harder to get fully right on the server, which is where it actually matters.',
       'Running deployment and production issues myself (via GitHub Actions and MonsterASP) taught me more about real-world operations than any of the development work did on its own.',
     ],
-    visualCaption: 'Conceptual UI representation, not a live screenshot.',
   },
   {
     slug: 'latia-pos',
@@ -179,7 +178,6 @@ export const projects: ProjectCaseStudy[] = [
       'Validating architecture decisions myself, rather than taking them on faith from the dev team, caught issues earlier and made my own planning more realistic.',
       "Server-side RBAC and data consistency aren't something you bolt on at the end; they have to be part of the API design from day one.",
     ],
-    visualCaption: 'Conceptual UI representation, not a live screenshot.',
   },
 ];
 

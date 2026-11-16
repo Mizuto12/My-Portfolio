@@ -33,7 +33,6 @@ export interface ProjectCaseStudy {
   uiuxNote?: string;
   testingNote?: string;
   lessons: string[];
-  visualCaption: string;
 }
 
 export interface TimelineEntry {

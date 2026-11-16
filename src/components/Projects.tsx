@@ -43,29 +43,6 @@ export function Projects() {
                   </button>
                 </div>
               </div>
-              <div className="pc-visual">
-                <div className="vhead">
-                  <span className="wdot r" />
-                  <span className="wdot y" />
-                  <span className="wdot g" />
-                  <span className="vurl">{project.slug}.local</span>
-                </div>
-                <div className="vbody">
-                  <div className="vrow">
-                    <div className="vpill" style={{ maxWidth: '38%' }} />
-                    <div className="vpill vpill--accent" style={{ maxWidth: '24%' }} />
-                  </div>
-                  <div className="vbar" style={{ width: '70%' }} />
-                  <div className="vbar" style={{ width: '46%' }} />
-                  <div className="vrow">
-                    <div className="vpill" />
-                    <div className="vpill" />
-                    <div className="vpill" />
-                  </div>
-                  <div className="vbar" style={{ width: '85%' }} />
-                  <div className="vcap">{project.visualCaption}</div>
-                </div>
-              </div>
             </article>
           ))}
         </div>

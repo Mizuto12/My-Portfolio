@@ -42,6 +42,20 @@ export function Hero() {
           </div>
         </div>
 
+        <div className="hero-side">
+        <figure className="hero-portrait">
+          <img
+            src={`${import.meta.env.BASE_URL}profile.webp`}
+            alt="Portrait of Chandrei Emerson V. Lao"
+            width={960}
+            height={1024}
+            fetchPriority="high"
+          />
+          <figcaption>
+            <strong>Chandrei Emerson V. Lao</strong>
+            <span>BSIT Student · PM + Developer</span>
+          </figcaption>
+        </figure>
         <div className="hero-card" aria-hidden="true">
           <div className="wtitle">
             <span className="wdot r" />
@@ -71,6 +85,7 @@ export function Hero() {
             </div>
             <div className="code-line">{'}'}</div>
           </div>
+        </div>
         </div>
       </div>
     </section>
