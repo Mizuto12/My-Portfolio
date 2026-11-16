@@ -1,0 +1,96 @@
+/*
+ * Tailwind, scoped deliberately: only the `theme` and `utilities` layers
+ * are imported — `preflight` (Tailwind's global CSS reset: margins,
+ * box-sizing, heading/form resets, etc.) is intentionally skipped so
+ * Tailwind utility classes are available for the new Gengar mascot
+ * components without touching the already-verified design-token system
+ * in src/index.css that the rest of the site depends on.
+ */
+@import 'tailwindcss/theme.css' layer(theme);
+@import 'tailwindcss/utilities.css' layer(utilities);
+
+@theme {
+  --animate-mascot-float: mascot-float 3.2s ease-in-out infinite;
+  --animate-mascot-enter: mascot-enter 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  --animate-mascot-eye-glow: mascot-eye-glow 2.4s ease-in-out infinite;
+  --animate-mascot-blink: mascot-blink 4.5s ease-in-out infinite;
+  --animate-mascot-spark: mascot-spark linear infinite;
+}
+
+@keyframes mascot-float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-1.5deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(1.5deg);
+  }
+}
+
+@keyframes mascot-enter {
+  0% {
+    opacity: 0;
+    transform: scale(0.35) translateY(40px) rotate(-10deg);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.08) translateY(-6px) rotate(3deg);
+  }
+  80% {
+    transform: scale(0.97) rotate(-1deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0) rotate(0deg);
+  }
+}
+
+@keyframes mascot-eye-glow {
+  0%,
+  100% {
+    filter: drop-shadow(0 0 2px rgba(255, 59, 59, 0.6)) drop-shadow(0 0 6px rgba(255, 59, 59, 0.35));
+  }
+  50% {
+    filter: drop-shadow(0 0 4px rgba(255, 59, 59, 0.95)) drop-shadow(0 0 14px rgba(255, 59, 59, 0.6));
+  }
+}
+
+@keyframes mascot-blink {
+  0%,
+  92%,
+  100% {
+    transform: scaleY(1);
+  }
+  96% {
+    transform: scaleY(0.08);
+  }
+}
+
+@keyframes mascot-spark {
+  0% {
+    transform: translate(0, 0) scale(0.6);
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translate(var(--spark-x, 20px), var(--spark-y, -60px)) scale(1.1);
+    opacity: 0;
+  }
+}
+
+/* prefers-reduced-motion is already handled a layer up (ThemeContext never
+   starts the takeover sequence, and GhostField never builds particles,
+   when the user has that preference) — these are a defensive second
+   guard in case any of these utility classes are ever reused somewhere
+   that isn't already gated. */
+@media (prefers-reduced-motion: reduce) {
+  .motion-safe-only {
+    animation: none !important;
+    transform: none !important;
+  }
+}

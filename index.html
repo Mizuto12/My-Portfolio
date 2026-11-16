@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0E6B46" />
+    <meta name="description" content="Portfolio of Chandrei Emerson V. Lao, a BSIT student building full-stack systems and coordinating software projects, featuring DTI OneLink and Latia POS." />
+    <title>Chandrei Emerson Lao — IT Student & Full-Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Sora:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      // Applies the saved theme before first paint so there's no flash of the
+      // wrong theme. Mirrors the fallback rule in ThemeContext.tsx: any value
+      // other than "gengar" or "green" resolves to the green default.
+      (function () {
+        try {
+          var t = localStorage.getItem('portfolio-theme');
+          document.documentElement.setAttribute('data-theme', t === 'gengar' ? 'gengar' : 'green');
+        } catch (e) {
+          document.documentElement.setAttribute('data-theme', 'green');
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

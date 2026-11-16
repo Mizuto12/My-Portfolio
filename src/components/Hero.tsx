@@ -1,0 +1,78 @@
+import { ArrowRight } from 'lucide-react';
+
+export function Hero() {
+  return (
+    <section className="hero" id="top">
+      <div className="container hero-inner">
+        <div>
+          <span className="hero-kicker">
+            <span className="dot" />
+            Open to internships &amp; OJT placements
+          </span>
+          <h1>
+            IT student who ships <span className="accent">working systems</span>, not just slide decks.
+          </h1>
+          <p className="sub">
+            I'm Chandrei Emerson V. Lao, a BSIT undergraduate at STI College — Sta. Cruz, splitting my time between
+            writing ASP.NET Core code and coordinating the teams that ship it. Three years in, across a
+            government-facing capstone and a multi-app POS platform.
+          </p>
+          <div className="hero-actions">
+            <a className="btn btn-primary" href="#projects">
+              View my projects
+              <ArrowRight size={16} aria-hidden="true" />
+            </a>
+            <a className="btn btn-outline" href="#contact">
+              Get in touch
+            </a>
+          </div>
+          <div className="hero-meta">
+            <div>
+              <span className="num">3 yrs</span>
+              <span className="lbl">Building software projects</span>
+            </div>
+            <div>
+              <span className="num">2</span>
+              <span className="lbl">Multi-role systems shipped</span>
+            </div>
+            <div>
+              <span className="num">PM + Dev</span>
+              <span className="lbl">Coordination and code</span>
+            </div>
+          </div>
+        </div>
+
+        <div className="hero-card" aria-hidden="true">
+          <div className="wtitle">
+            <span className="wdot r" />
+            <span className="wdot y" />
+            <span className="wdot g" />
+          </div>
+          <div className="code-block">
+            <div className="code-line">
+              <span className="c">// currently —</span>
+            </div>
+            <div className="code-line">
+              <span className="k">class</span> <span className="f">ChandreiLao</span> {'{'}
+            </div>
+            <div className="code-line code-indent">
+              <span className="f">role</span> = <span className="s">"BSIT Student · PM + Dev"</span>;
+            </div>
+            <div className="code-line code-indent">
+              <span className="f">school</span> = <span className="s">"STI College — Sta. Cruz"</span>;
+            </div>
+            <div className="code-line code-indent">
+              <span className="f">stack</span> = [<span className="s">"C#"</span>, <span className="s">"ASP.NET Core"</span>,{' '}
+              <span className="s">"JavaScript"</span>, <span className="s">"SQL"</span>,{' '}
+              <span className="s">"React"</span>, <span className="s">"Node.js"</span>];
+            </div>
+            <div className="code-line code-indent">
+              <span className="f">focus</span> = <span className="s">"reliable systems, shipped on time"</span>;
+            </div>
+            <div className="code-line">{'}'}</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
