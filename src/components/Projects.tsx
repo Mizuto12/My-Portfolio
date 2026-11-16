@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Image as ImageIcon } from 'lucide-react';
 import { projects } from '../data/resume';
 import { ProjectModal } from './ProjectModal';
 
@@ -42,6 +42,20 @@ export function Projects() {
                     <ArrowRight size={16} aria-hidden="true" />
                   </button>
                 </div>
+              </div>
+              <div className="pc-media">
+                {project.screenshot ? (
+                  <img
+                    src={`${import.meta.env.BASE_URL}${project.screenshot.src}`}
+                    alt={project.screenshot.alt}
+                    loading="lazy"
+                  />
+                ) : (
+                  <div className="pc-media-empty" role="img" aria-label={`${project.title} screenshot coming soon`}>
+                    <ImageIcon size={28} aria-hidden="true" />
+                    <span>Screenshot coming soon</span>
+                  </div>
+                )}
               </div>
             </article>
           ))}

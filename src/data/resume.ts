@@ -135,6 +135,10 @@ export const projects: ProjectCaseStudy[] = [
       'Role-based access control is easy to get "mostly right" in the UI and much harder to get fully right on the server, which is where it actually matters.',
       'Running deployment and production issues myself (via GitHub Actions and MonsterASP) taught me more about real-world operations than any of the development work did on its own.',
     ],
+    screenshot: {
+      src: 'projects/dti-onelink-login.png',
+      alt: 'DTI OneLink login screen for the DTI Laguna Provincial Office',
+    },
   },
   {
     slug: 'latia-pos',
