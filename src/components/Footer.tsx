@@ -17,7 +17,7 @@ export function Footer() {
           </p>
           <nav className="footer-links" aria-label="Footer">
             <a href="#top">Back to top</a>
-            <a href="/Chandrei-Lao-Resume.pdf" download>
+            <a href={`${import.meta.env.BASE_URL}Chandrei-Lao-Resume.pdf`} download>
               Download résumé
             </a>
           </nav>

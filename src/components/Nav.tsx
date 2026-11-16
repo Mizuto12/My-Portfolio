@@ -52,7 +52,7 @@ export function Nav() {
           ))}
         </nav>
         <div className="nav-cta">
-          <a className="btn btn-outline btn-sm" href="/Chandrei-Lao-Resume.pdf" download>
+          <a className="btn btn-outline btn-sm" href={`${import.meta.env.BASE_URL}Chandrei-Lao-Resume.pdf`} download>
             <Download size={16} aria-hidden="true" />
             Resume
           </a>

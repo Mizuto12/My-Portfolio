@@ -8,4 +8,5 @@ export default defineConfig({
   // src/mascot.css) — it does not replace or touch the existing
   // src/index.css design-token system the rest of the site relies on.
   plugins: [react(), tailwindcss()],
+  base: '/My-Portfolio/',
 })
