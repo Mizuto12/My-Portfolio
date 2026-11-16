@@ -14,6 +14,8 @@ import {
   ShieldCheck,
   ShoppingCart,
   Sparkles,
+  Users,
+  Shuffle,
 } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 
@@ -30,6 +32,8 @@ export const ICONS: Record<string, LucideIcon> = {
   ShieldCheck,
   ShoppingCart,
   Sparkles,
+  Users,
+  Shuffle,
 };
 
 export function getIcon(name: string): LucideIcon {

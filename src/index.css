@@ -544,6 +544,38 @@ textarea:focus-visible {
   }
 }
 
+/* ===== Career objective / soft skills ===== */
+.objective {
+  background: var(--accent-soft);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius-md);
+  padding: var(--sp-5);
+  margin-bottom: var(--sp-6);
+}
+.objective-label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: var(--sp-2);
+}
+.objective p {
+  margin: 0;
+  color: var(--text);
+}
+.soft-heading {
+  margin: var(--sp-7) 0 var(--sp-4);
+  font-size: 18px;
+}
+.soft-text {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 14.5px;
+}
+
 /* ===== About ===== */
 .about-grid {
   display: grid;

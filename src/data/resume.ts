@@ -16,6 +16,24 @@ export const profile = {
   programDates: 'August 2023 — Present',
 };
 
+export const careerObjective =
+  "To secure an internship or OJT placement where I can apply my ASP.NET Core and full-stack skills to real systems, keep growing from developer toward project management, and contribute reliably to a team, while continuing to learn about enterprise systems and cybersecurity.";
+
+export const softSkills = [
+  {
+    id: 'adaptability',
+    title: 'Adaptability',
+    icon: 'Shuffle',
+    text: 'I came from the STEM strand in senior high school and moved into an IT degree, learning programming, databases, and web development from the ground up. Since then I have kept switching roles as projects needed, from developer to project manager, and from lead programmer to graphic designer in competitions.',
+  },
+  {
+    id: 'teamwork',
+    title: 'Teamwork',
+    icon: 'Users',
+    text: 'DTI OneLink and Latia POS were both team projects, and I worked with teammates and stakeholders to agree on scope, priorities, and task workflow. In Code Fest, I joined teams as a programmer, assistant programmer, and graphic designer, which taught me to support the team in whatever role it needs.',
+  },
+];
+
 export const skillCategories: SkillCategory[] = [
   {
     id: 'languages',

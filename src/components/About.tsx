@@ -1,5 +1,5 @@
 import { Award, Briefcase, GraduationCap, MapPin } from 'lucide-react';
-import { profile } from '../data/resume';
+import { careerObjective, profile } from '../data/resume';
 
 const FACTS = [
   {
@@ -31,6 +31,10 @@ export function About() {
         <div className="section-head">
           <span className="section-label">About</span>
           <h2>From coordinating teams to writing the code they ship.</h2>
+        </div>
+        <div className="objective">
+          <span className="objective-label">Career Objective</span>
+          <p>{careerObjective}</p>
         </div>
         <div className="about-grid">
           <div>

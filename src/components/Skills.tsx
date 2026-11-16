@@ -1,4 +1,4 @@
-import { skillCategories } from '../data/resume';
+import { skillCategories, softSkills } from '../data/resume';
 import { getIcon } from '../iconRegistry';
 
 export function Skills() {
@@ -31,6 +31,24 @@ export function Skills() {
                     </span>
                   ))}
                 </div>
+              </div>
+            );
+          })}
+        </div>
+
+        <h3 className="soft-heading">Soft skills</h3>
+        <div className="skills-grid">
+          {softSkills.map((item) => {
+            const Icon = getIcon(item.icon);
+            return (
+              <div className="skill-card" key={item.id}>
+                <h3>
+                  <span className="ico">
+                    <Icon size={15} aria-hidden="true" />
+                  </span>
+                  {item.title}
+                </h3>
+                <p className="soft-text">{item.text}</p>
               </div>
             );
           })}
